@@ -86,7 +86,7 @@
               <?php
               include_once("connect.php");
               $curr=$record['Event_name'];
-              $sql = "SELECT user_name FROM interested_users where Event_name='$curr';";
+              $sql = "SELECT user_name FROM interested_users where Event_name='Donation Drive for v';";
               $resultset2 = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));			
               while( $record2 = mysqli_fetch_assoc($resultset2) ) {
               ?>

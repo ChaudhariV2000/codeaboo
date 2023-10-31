@@ -60,7 +60,7 @@
                 if(isset($_POST))
                 {
                     $curr=$record['Event_name'];
-                    $user=$_SESSION['name'];
+                    $user="arbitrary user";
                     $sql="Insert into interested_users (Event_name,user_name) values ('$curr','$user')";
                     mysqli_query($conn, $sql);
                 }
